@@ -9,8 +9,8 @@
 ```
 - [x] pick icon
 - [ ] adjust menu bar and text colors
-- [ ] write out price comparison for domain name providers and make sure they offer custom email
-    - GoDaddy, Web.com, Hostinger, HostGator, Bluehost
+- [x] write out price comparison for domain name providers and make sure they offer custom email
+    - we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for domain
 - [ ] create test Render account and deploy fork of template
     - https://github.com/render-examples/express-hello-world/tree/main
     - https://docs.render.com/deploy-node-express-app
