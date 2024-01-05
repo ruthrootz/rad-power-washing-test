@@ -8,12 +8,23 @@
 .RAD-site-5-hex { color: #F2F2F2; }
 ```
 - [x] pick icon
-- [ ] adjust menu bar and text colors
 - [x] write out price comparison for domain name providers and make sure they offer custom email
-    - we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for domain
-- [ ] create test Render account and deploy fork of template
-    - https://github.com/render-examples/express-hello-world/tree/main
-    - https://docs.render.com/deploy-node-express-app
+
+we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for domain
+
+| provider | .com price | .us price | .co price | additional costs |
+| --- | --- | --- | --- | --- |
+| GoDaddy | $22/year | --- | --- | comes with privacy, $8/month for custom email, $7/month for SSL |
+| web.com | $12/year | --- | $5/year | $2/month for email, $2/month for privacy, $7.50/month for SSL |
+| domain.com | $12/year | $9/year | $27/year | $9/year for privacy, $6/month for email, $3/month for SSL |
+| Hostinger | $16/year | --- | --- | privacy included, looks like can't get SSL except if you host with them |
+| HostGator | $13/year | --- | --- | $15/year for privacy, $6/month for email, looks like can't get SSL except if you host with them |
+| Bluehost | $13/year | --- | --- | $12/year for privacy, $6/month for email, can't get SSL except if you host with them |
+| Ionos | $17/year | --- | --- | $1/month for email, $25/year SSL, privacy is included |
+
+- [x] create test Render account and deploy fork of template
+    - https://express-test-zo3z.onrender.com/
+- [ ] adjust menu bar and text colors
 - [ ] add background video
     - [Optimizing video backgrounds in CSS and JavaScript - LogRocket Blog](https://blog.logrocket.com/optimizing-video-backgrounds-css-javascript/)
     - [HTML/CSS video as background for the header](https://stackoverflow.com/questions/54208390/html-css-video-as-background-for-the-header)
@@ -33,8 +44,11 @@
 - [ ] set up my gmail for email test
 - [ ] test email form
 - [ ] include list of reviews
+- [ ] create repo on rad GitHub account
+- [ ] copy over code
 - [ ] deploy to Render
 - [ ] attach to domain
+- [ ] create Google Workspaces account and custom email
 
 ### NOTES
 - inspiration:
