@@ -1,10 +1,11 @@
 ### TODO
 - [x] pick a colors for theme
 ```
+/* Color Theme Swatches in Hex */
 .RAD-site-1-hex { color: #172E73; }
 .RAD-site-2-hex { color: #182859; }
 .RAD-site-3-hex { color: #8E9ABF; }
-.RAD-site-4-hex { color: #261F1D; }
+.RAD-site-4-hex { color: #212529; }
 .RAD-site-5-hex { color: #F2F2F2; }
 ```
 - [x] pick icon
