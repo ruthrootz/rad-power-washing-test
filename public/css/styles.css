@@ -62,7 +62,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #212529;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -2878,16 +2878,16 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  --bs-btn-color: #28B2E8;
+  --bs-btn-color: #8E9ABF;
   --bs-btn-bg: #293036;
   --bs-btn-border-color: #293036;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #000000;
-  --bs-btn-hover-border-color: #28B2E8;
+  --bs-btn-hover-border-color: #8E9ABF;
   --bs-btn-focus-shadow-rgb: 255, 208, 38;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #28B2E8;
-  --bs-btn-active-border-color: #28B2E8;
+  --bs-btn-active-bg: #8E9ABF;
+  --bs-btn-active-border-color: #8E9ABF;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #293036;
@@ -3680,7 +3680,7 @@ textarea.form-control-lg {
   --bs-nav-tabs-border-color: #dee2e6;
   --bs-nav-tabs-border-radius: 0.375rem;
   --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
-  --bs-nav-tabs-link-active-color: #495057;
+  --bs-nav-tabs-link-active-color: #172E73;
   --bs-nav-tabs-link-active-bg: #fff;
   --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
   border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
@@ -3716,7 +3716,7 @@ textarea.form-control-lg {
 .nav-pills {
   --bs-nav-pills-border-radius: 0.375rem;
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #28B2E8;
+  --bs-nav-pills-link-active-bg: #172E73;
 }
 .nav-pills .nav-link {
   background: none;
@@ -4172,12 +4172,12 @@ textarea.form-control-lg {
 }
 
 .navbar-dark {
-  --bs-navbar-color: rgba(255, 255, 255, 0.55);
-  --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+  --bs-navbar-color: #8E9ABF;
+  --bs-navbar-hover-color: #8E9ABF;
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-  --bs-navbar-active-color: #fff;
-  --bs-navbar-brand-color: #fff;
-  --bs-navbar-brand-hover-color: #fff;
+  --bs-navbar-active-color: #8E9ABF;
+  --bs-navbar-brand-color: #8E9ABF;
+  --bs-navbar-brand-hover-color: #8E9ABF;
   --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -10921,7 +10921,7 @@ p {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #28B2E8;
+  color: #8E9ABF;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   letter-spacing: 0.0625em;
@@ -10937,7 +10937,7 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #28B2E8;
+  color: #8E9ABF;
 }
 
 @media (min-width: 992px) {
@@ -11254,7 +11254,7 @@ section#contact form#contactForm p.help-block {
   margin: 0;
 }
 section#contact form#contactForm .form-control:focus {
-  border-color: #ffc800;
+  border-color: #ced4da;
   box-shadow: none;
 }
 section#contact form#contactForm ::-webkit-input-placeholder {
