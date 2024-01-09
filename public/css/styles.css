@@ -675,6 +675,10 @@ progress {
   margin-left: auto;
 }
 
+.spray-gun {
+  max-height: 50px;
+}
+
 /*@media (min-width: 576px) {*/
   /*.container-sm, .container {*/
     /*max-width: 540px;*/
