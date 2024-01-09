@@ -25,10 +25,8 @@ we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for doma
 
 - [x] create test Render account and deploy fork of template
     - https://express-test-zo3z.onrender.com/
-- [ ] adjust menu bar and text colors
+- [x] adjust menu bar and text colors
 - [ ] add background video
-    - [Optimizing video backgrounds in CSS and JavaScript - LogRocket Blog](https://blog.logrocket.com/optimizing-video-backgrounds-css-javascript/)
-    - [HTML/CSS video as background for the header](https://stackoverflow.com/questions/54208390/html-css-video-as-background-for-the-header)
 - [ ] add services: house wash, roof wash, commercial power washing, new construction cleaning, window washing, concrete wash and sealing, gutter cleaning
     - condos -> window washing, apartments -> commercial power washing
 - [ ] replace photos, include before/after pics
