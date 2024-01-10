@@ -10988,14 +10988,16 @@ header.masthead {
   background-size: cover;
 }
 header.masthead .masthead-subheading {
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
+  font-size: 2.5rem;
+  -webkit-text-fill-color: #212529;
+  /*-webkit-text-stroke: 1px #8E9ABF;*/
+  background-color: rgba(142, 154, 191,.5);
+  line-height: 3rem;
   width: 100%;
   position: absolute;
-  bottom: 20%;
+  bottom: 30%;
   left: 0;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
