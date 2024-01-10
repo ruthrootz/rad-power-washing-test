@@ -25,7 +25,6 @@ we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for doma
 | Ionos | $17/year | --- | --- | $1/month for email, $25/year SSL, privacy is included |
 
 - [x] create test Render account and deploy fork of template
-    - https://express-test-zo3z.onrender.com/
 - [x] adjust menu bar and text colors
 - [ ] add serving area... same as Lance's
 - [ ] add contact form that matches Lance's
@@ -36,17 +35,16 @@ we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for doma
     - https://medium.com/@Scofield_Idehen/securing-nodemailer-with-proper-authentication-a5fb1fa372d0
 - [ ] set up my gmail for email test
 - [ ] test email form
-- [ ] add background video
-- [ ] add services: house wash, roof wash, commercial power washing, new construction cleaning, window washing, concrete wash and sealing, gutter cleaning
-    - condos -> window washing, apartments -> commercial power washing
-- [ ] get locations/names for services
-- [ ] get list of customers from Zach
-- [ ] add about section (Zach will write a paragraph)
-- [ ] add social links and phone number to the nav bar
-- [ ] add reviews section (whenever Zach gets some)
 - [ ] create repo on rad GitHub account
 - [ ] copy over code
 - [ ] deploy to Render
+- [ ] add background video
+- [ ] add services: house wash, roof wash, commercial power washing, new construction cleaning, window washing, concrete wash and sealing, gutter cleaning
+- [ ] get locations/names for services
+- [ ] get list of customers from Zach
+- [ ] add about section (Zach will write a paragraph)
+- [ ] add social links to the nav bar and bottom of the page
+- [ ] add reviews section (whenever Zach gets some)
 - [ ] attach to domain
 - [ ] create Google Workspaces account and custom email
 
