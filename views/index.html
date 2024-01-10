@@ -177,28 +177,74 @@
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <!-- Name input-->
                                 <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <div class="form-group">
-                                <!-- Email address input-->
                                 <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
+                            <div class="form-group">
                                 <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
+                            <div class="form-check mb-md-0">
+                                <div class="d-inline-block w-50">Check all that apply:
+                                    <div><input class="form-check-input" type="checkbox" value="" id="check-soft-wash-roof">
+                                    <label class="form-check-label" for="check-soft-wash">Soft wash roof</label></div>
+                                    <div><input class="form-check-input" type="checkbox" value="" id="check-soft-wash-house">
+                                    <label class="form-check-label" for="check-soft-wash-house">Soft wash house</label></div>
+                                    <div><input class="form-check-input" type="checkbox" value="" id="check-driveway-wash">
+                                    <label class="form-check-label" for="check-driveway-wash">Driveway wash</label></div>
+                                    <div><input class="form-check-input" type="checkbox" value="" id="check-driveway-seal">
+                                    <label class="form-check-label" for="check-driveway-seal">Driveway seal</label></div>
+                                    <div><input class="form-check-input" type="checkbox" value="" id="check-gutter">
+                                    <label class="form-check-label" for="check-gutter">Gutter cleaning</label></div>
+                                    <div><input class="form-check-input" type="checkbox" value="" id="check-deck-wash">
+                                    <label class="form-check-label" for="check-deck-wash">Deck wash</label></div>
+                                    <div><input class="form-check-input" type="checkbox" value="" id="check-commercial">
+                                    <label class="form-check-label" for="check-commercial">Commercial power washing</label></div>
+                                </div>
+                                <div class="d-inline-block">How did you hear about us?
+                                    <div><input class="form-radio-input" type="radio" value="" id="radio-referral">
+                                    <label class="form-radio-label" for="radio-referral">Referral</label></div>
+                                    <div><input class="form-radio-input" type="radio" value="" id="radio-google">
+                                    <label class="form-radio-label" for="radio-google">Google</label></div>
+                                    <div><input class="form-radio-input" type="radio" value="" id="radio-instagram">
+                                    <label class="form-radio-label" for="radio-instagram">Instagram</label></div>
+                                    <div><input class="form-radio-input" type="radio" value="" id="radio-facebook">
+                                    <label class="form-radio-label" for="radio-facebook">Facebook</label></div>
+                                    <div><input class="form-radio-input" type="radio" value="" id="radio-yard-sign">
+                                    <label class="form-radio-label" for="radio-yard-sign">Yard sign</label></div>
+                                    <div><input class="form-radio-input" type="radio" value="" id="radio-truck">
+                                    <label class="form-radio-label" for="radio-truck">RAD Power Washing truck</label></div>
+                                    <div><input class="form-radio-input" type="radio" value="" id="radio-other">
+                                    <label class="form-radio-label" for="radio-other">Other</label></div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="address1" placeholder="Address"></input>
                             </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="address2" placeholder="Address 2"></input>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="city" placeholder="City"></input>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="text" id="state" placeholder="State"></input>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <input class="form-control" type="text" id="zip" placeholder="Zip"></input>
+                            </div>
+                            <!--<div class="form-group form-group-textarea mb-md-0">-->
+                                <!--[> Message input<]-->
+                                <!--<textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>-->
+                                <!--<div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>-->
+                            <!--</div>-->
                         </div>
                     </div>
                     <!-- Submit success message-->
