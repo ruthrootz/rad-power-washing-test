@@ -26,7 +26,7 @@ we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for doma
 
 - [x] create test Render account and deploy fork of template
 - [x] adjust menu bar and text colors
-- [ ] add serving area... same as Lance's
+- [x] add serving area... same as Lance's
     - SERVING MEDINA, SUMMIT & CUYAHOGA COUNTIES
 - [ ] add contact form that matches Lance's
     - "Check All Services That Apply", same as Lance's but without Christmas lights
@@ -43,7 +43,7 @@ we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for doma
 - [ ] add services and replace "project names"
     - house wash, roof wash, commercial power washing, new construction cleaning, window washing, concrete wash and sealing, gutter cleaning
 - [ ] get locations/names for services
-- [ ] get list of customers from Zach
+- [ ] get list of customers from Zach and replace customer icons
 - [ ] add about section (Zach will write a paragraph)
 - [ ] add social links to the nav bar and bottom of the page
 - [ ] add reviews section (whenever Zach gets some)
