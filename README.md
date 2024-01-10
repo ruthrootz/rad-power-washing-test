@@ -29,6 +29,7 @@ we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for doma
 - [x] add serving area... same as Lance's
 - [x] add contact form that matches Lance's
 - [ ] get request quote form working
+    - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms
     - https://developers.google.com/gmail/api/quickstart/js
     - https://javascript.plainenglish.io/send-emails-for-your-node-js-application-using-nodemailer-express-b12584d999af
     - https://medium.com/@Scofield_Idehen/securing-nodemailer-with-proper-authentication-a5fb1fa372d0
