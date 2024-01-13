@@ -42,5 +42,8 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    const submitContactForm = () => {
+        console.log("testing contact form submit...");
+    }
 });
 
