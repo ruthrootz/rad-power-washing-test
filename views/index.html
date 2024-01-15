@@ -176,92 +176,75 @@
                     <h2 class="section-heading text-uppercase">Contact us for a free quote!</h2>
                     <h2 class="section-subheading text-uppercase">Or call us:<a class="nav-link" href="tel:330-419-6860">(330)419-6860</a></h2>
                 </div>
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form id="contactForm" action="/" method="POST">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <input class="form-control" name="name" type="text" placeholder="Your Name *" required />
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <input class="form-control" name="email" type="email" placeholder="Your Email *" data-sb-validations="email" required />
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <input class="form-control" name="phone" type="tel" placeholder="Your Phone *" required />
                             </div>
                             <div class="form-check mb-md-0">
                                 <div class="d-inline-block w-50">Check all that apply:
-                                    <div><input class="form-check-input" type="checkbox" value="" id="check-soft-wash-roof">
+                                    <div><input class="form-check-input" type="checkbox" value="soft wash roof" name="check-all-apply" id="check-soft-wash-roof">
                                     <label class="form-check-label" for="check-soft-wash-roof">Soft wash roof</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="" id="check-soft-wash-house">
+                                    <div><input class="form-check-input" type="checkbox" value="soft wash house" name="check-all-apply" id="check-soft-wash-house">
                                     <label class="form-check-label" for="check-soft-wash-house">Soft wash house</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="" id="check-driveway-wash">
+                                    <div><input class="form-check-input" type="checkbox" value="driveway wash" name="check-all-apply" id="check-driveway-wash">
                                     <label class="form-check-label" for="check-driveway-wash">Driveway wash</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="" id="check-driveway-seal">
+                                    <div><input class="form-check-input" type="checkbox" value="driveway seal" name="check-all-apply" id="check-driveway-seal">
                                     <label class="form-check-label" for="check-driveway-seal">Driveway seal</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="" id="check-gutter">
+                                    <div><input class="form-check-input" type="checkbox" value="gutter cleaning" name="check-all-apply" id="check-gutter">
                                     <label class="form-check-label" for="check-gutter">Gutter cleaning</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="" id="check-deck-wash">
+                                    <div><input class="form-check-input" type="checkbox" value="deck wash" name="check-all-apply" id="check-deck-wash">
                                     <label class="form-check-label" for="check-deck-wash">Deck wash</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="" id="check-commercial">
+                                    <div><input class="form-check-input" type="checkbox" value="commercial power washing" name="check-all-apply" id="check-commercial">
                                     <label class="form-check-label" for="check-commercial">Commercial power washing</label></div>
                                 </div>
                                 <div class="d-inline-block">How did you hear about us?
-                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="" id="radio-referral">
+                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="referral" id="radio-referral">
                                     <label class="form-check-label" for="radio-referral">Referral</label></div>
-                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="" id="radio-google">
+                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="Google" id="radio-google">
                                     <label class="form-check-label" for="radio-google">Google</label></div>
-                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="" id="radio-instagram">
+                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="Instagram" id="radio-instagram">
                                     <label class="form-check-label" for="radio-instagram">Instagram</label></div>
-                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="" id="radio-facebook">
+                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="Facebook" id="radio-facebook">
                                     <label class="form-check-label" for="radio-facebook">Facebook</label></div>
-                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="" id="radio-yard-sign">
+                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="yard sign" id="radio-yard-sign">
                                     <label class="form-check-label" for="radio-yard-sign">Yard sign</label></div>
-                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="" id="radio-truck">
+                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="RAD truck" id="radio-truck">
                                     <label class="form-check-label" for="radio-truck">RAD Power Washing truck</label></div>
-                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="" id="radio-other">
+                                    <div><input class="form-check-input" type="radio" name="radio-hear-about" value="other" id="radio-other">
                                     <label class="form-check-label" for="radio-other">Other</label></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input class="form-control" type="text" id="address1" placeholder="Address"></input>
+                                <input class="form-control" type="text" name="address1" placeholder="Address"></input>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="text" id="address2" placeholder="Address 2"></input>
+                                <input class="form-control" type="text" name="address2" placeholder="Address 2"></input>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="text" id="city" placeholder="City"></input>
+                                <input class="form-control" type="text" name="city" placeholder="City"></input>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="text" id="state" placeholder="State"></input>
+                                <input class="form-control" type="text" name="state" placeholder="State"></input>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="text" id="zip" placeholder="Zip"></input>
+                                <input class="form-control" type="text" name="zip" placeholder="Zip"></input>
                             </div>
                             <div class="form-group mb-md-0">
-                                <input class="form-control" type="number" id="footage" placeholder="Square footage of house"></input>
+                                <input class="form-control" type="number" name="footage" placeholder="Square footage of house"></input>
                             </div>
                         </div>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Quote submitted! We'll be in touch soon!</div>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
                     <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Request Quote</button></div>
                 </form>
