@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.get("/", (req, res) => res.render('index'));
 
 app.post("/", async (req, res) => {
-  const { name, phone, email, address1, address2, city, state, zip, footage } = req.body;
+  const { name, phone, email, address1, address2, city, state, zip, footage, hearAbout, checkAllApply } = req.body;
   console.log(req.body);
   res.redirect("/");
 });
