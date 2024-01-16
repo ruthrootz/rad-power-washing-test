@@ -12,7 +12,7 @@ app.get("/", (req, res) => res.render('index'));
 app.post("/", async (req, res) => {
   const { name, phone, email, address1, address2, city, state, zip, footage, hearAbout, checkAllApply } = req.body;
   console.log(req.body);
-  res.redirect("/");
+  res.redirect("/thankyou.html");
 });
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
