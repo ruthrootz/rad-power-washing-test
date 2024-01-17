@@ -2,6 +2,29 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3001;
 const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+
+const config = {
+  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
+  auth: {
+    user: "rootzmacbwb@gmail.com",
+    pass: "gvylgrsvvtkyvpkm",
+  },
+};
+
+const send = async (data) => {
+  const transporter = nodemailer.createTransport(config);
+  transporter.sendMail(data, (err, info) => {
+    if (err) {
+      console.log(err);
+    } else {
+      return info.response;
+    }
+  });
+}
 
 app.use(express.static('public'));
 app.use(express.static(__dirname + '/views'));
@@ -12,6 +35,13 @@ app.get("/", (req, res) => res.render('index'));
 app.post("/", async (req, res) => {
   const { name, phone, email, address1, address2, city, state, zip, footage, hearAbout, checkAllApply } = req.body;
   console.log(req.body);
+  const emailData = {
+    from: email,
+    to: "rootzmacbwb@gmail.com",
+    subject: "test",
+    text: "test text...",
+  };
+  await send(emailData);
   res.redirect("/thankyou.html");
 });
 
