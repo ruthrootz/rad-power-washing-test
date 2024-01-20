@@ -10,8 +10,8 @@ const config = {
   port: 587,
   secure: false,
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    user: "rootzmacbwb@gmail.com",
+    pass: "gvylgrsvvtkyvpkm",
   },
 };
 
@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.get("/", (req, res) => res.render('index'));
 
-app.post("/", async (req, res) => {
+app.post("/freequote", async (req, res) => {
   const { name, phone, email, address1, address2, city, state, zip, footage, hearAbout, checkAllApply } = req.body;
   console.log(req.body);
   const emailData = {
