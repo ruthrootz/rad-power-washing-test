@@ -10,8 +10,8 @@ const config = {
   port: 587,
   secure: false,
   auth: {
-    user: "rootzmacbwb@gmail.com",
-    pass: "gvylgrsvvtkyvpkm",
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 };
 
@@ -37,7 +37,7 @@ app.post("/", async (req, res) => {
   console.log(req.body);
   const emailData = {
     from: email,
-    to: "rootzmacbwb@gmail.com",
+    to: "nemucha115@gmail.com", // TODO: make this env var, Zach's business email
     subject: "test",
     text: "test text...",
   };
