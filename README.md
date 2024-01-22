@@ -28,18 +28,17 @@ we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for doma
 - [x] adjust menu bar and text colors
 - [x] add serving area... same as Lance's
 - [x] add contact form that matches Lance's
-- [ ] get request quote form working
+- [x] get request quote form working
     - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/forms
-    - https://developers.google.com/gmail/api/quickstart/js
     - https://javascript.plainenglish.io/send-emails-for-your-node-js-application-using-nodemailer-express-b12584d999af
-    - https://medium.com/@Scofield_Idehen/securing-nodemailer-with-proper-authentication-a5fb1fa372d0
-- [ ] set up my gmail for email test
-- [ ] test email form
-- [ ] create RAD Power Washing GitHub org
-- [ ] create official repo
-- [ ] copy over code
-- [ ] deploy to Render
-- [ ] add background video
+    - https://dev.to/chandrapantachhetri/sending-emails-securely-using-node-js-nodemailer-smtp-gmail-and-oauth2-g3a
+- [x] set up my gmail for email test
+- [x] test email form
+- [x] create RAD Power Washing GitHub org
+- [x] create official repo
+- [x] copy over code
+- [x] deploy to Render
+- [ ] change background video
 - [ ] add services and replace "project names"
     - house wash, roof wash, commercial power washing, new construction cleaning, window washing, concrete wash and sealing, gutter cleaning
 - [ ] get locations/names for services
@@ -47,8 +46,13 @@ we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for doma
 - [ ] add about section (Zach will write a paragraph)
 - [ ] add social links to the nav bar and bottom of the page
 - [ ] add reviews section (whenever Zach gets some)
-- [ ] attach to domain
+- [ ] create Render account and set up payment method
+- [ ] link Render to GitHub and deploy app
 - [ ] create Google Workspaces account and custom email
+- [ ] create forwarder email and set it up with 2F auth
+- [ ] update the secrets values with emails
+- [ ] buy domain (Hostinger or Ionos)
+- [ ] attach Render app to domain
 
 ### NOTES
 - inspiration:
