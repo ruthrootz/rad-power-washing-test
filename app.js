@@ -39,8 +39,20 @@ app.post("/freequote", async (req, res) => {
   const emailData = {
     from: process.env.FROM_EMAIL,
     to: process.env.TO_EMAIL, // TODO: make this Zach's business email
-    subject: "test",
-    text: "test text...",
+    subject: `Quote request from ${name}`,
+    text: `
+      Name: ${name}
+      Phone: ${phone}
+      Email: ${email}
+      Address: ${address1}
+      Address 2: ${address2}
+      City: ${city}
+      State: ${state}
+      Zip: ${zip}
+      Square footage of house: ${footage}
+      Service/s requested: ${checkAllApply}
+      How they heard about RAD: ${hearAbout}
+    `,
   };
   await send(emailData);
   res.redirect("/thankyou.html");
