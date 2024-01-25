@@ -38,21 +38,19 @@ we narrowed it down to: Google Workspaces for email, Hostinger or Ionos for doma
 - [x] create official repo
 - [x] copy over code
 - [x] deploy to Render
+- [ ] create burner email and set it up with 2F auth
 - [ ] change background video
-- [ ] add services and replace "project names"
-    - house wash, roof wash, commercial power washing, new construction cleaning, window washing, concrete wash and sealing, gutter cleaning
-- [ ] get locations/names for services
-- [ ] get list of customers from Zach and replace customer icons
-- [ ] add about section (Zach will write a paragraph)
+- [ ] add pic for each service
 - [ ] add social links to the nav bar and bottom of the page
+- [ ] add about section (Zach will write a paragraph)
+- [ ] get list of customers from Zach and replace customer icons
 - [ ] add reviews section (whenever Zach gets some)
 - [ ] create Render account and set up payment method
 - [ ] link Render to GitHub and deploy app
-- [ ] create Google Workspaces account and custom email
-- [ ] create forwarder email and set it up with 2F auth
-- [ ] update the secrets values with emails
 - [ ] buy domain (Hostinger or Ionos)
-- [ ] attach Render app to domain
+- [ ] attach domain to Render app
+- [ ] create Google Workspaces account and custom email
+- [ ] update the env values with emails
 
 ### NOTES
 - inspiration:
