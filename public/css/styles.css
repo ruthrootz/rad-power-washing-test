@@ -129,7 +129,7 @@ body {
 }
 
 .video-container {
-  min-height: 900px;
+  min-height: 700px;
   width: 100%;
   position: relative;
 }
@@ -10993,10 +10993,12 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  margin: 0;
+  width: 100%;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
-  -webkit-text-fill-color: #000;
+  -webkit-text-fill-color: #293036;
   background-color: rgba(255,255,255,.5);
   line-height: 2rem;
   width: 100%;
