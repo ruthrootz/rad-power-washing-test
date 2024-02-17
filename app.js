@@ -38,7 +38,7 @@ app.post("/freequote", async (req, res) => {
   console.log(req.body);
   const emailData = {
     from: process.env.FROM_EMAIL,
-    to: process.env.TO_EMAIL, // TODO: make this Zach's business email
+    to: process.env.TO_EMAIL,
     subject: `Quote request from ${name}`,
     text: `Name: ${name}
 Phone: ${phone}
