@@ -34,7 +34,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.get("/", (req, res) => res.render('index'));
 
 app.post("/freequote", async (req, res) => {
-  const { name, phone, email, address1, address2, city, state, zip, footage, hearAbout, checkAllApply } = req.body;
+  const { name, phone, email, address1, address2, city, state, zip, footage, hearAbout, checkAllApply, commentsQuestions } = req.body;
   console.log(req.body);
   const emailData = {
     from: process.env.FROM_EMAIL,
@@ -50,7 +50,8 @@ State: ${state}
 Zip: ${zip}
 Square footage of house: ${footage}
 Service/s requested: ${checkAllApply}
-How they heard about RAD: ${hearAbout}`,
+How they heard about RAD: ${hearAbout}
+Comments, questions: ${commentsQuestions}`,
   };
   await send(emailData);
   res.redirect("/thankyou.html");
