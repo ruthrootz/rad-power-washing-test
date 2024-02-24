@@ -34,8 +34,11 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.get("/", (req, res) => res.render('index'));
 
 app.post("/freequote", async (req, res) => {
-  const { name, phone, email, address1, address2, city, state, zip, footage, hearAbout, checkAllApply, commentsQuestions } = req.body;
+  let { name, phone, email, address1, address2, city, state, zip, footage, hearAbout, checkAllApply, commentsQuestions, otherReason } = req.body;
+  if (hearAbout === "other")
+    hearAbout = otherReason;
   console.log(req.body);
+
   const emailData = {
     from: process.env.FROM_EMAIL,
     to: process.env.TO_EMAIL,
@@ -49,10 +52,11 @@ City: ${city}
 State: ${state}
 Zip: ${zip}
 Square footage of house: ${footage}
-Service/s requested: ${checkAllApply}
+Service/s requested: ${checkAllApply.toString().replace(",", ", ")}
 How they heard about RAD: ${hearAbout}
 Comments, questions: ${commentsQuestions}`,
   };
+
   await send(emailData);
   res.redirect("/thankyou.html");
 });
