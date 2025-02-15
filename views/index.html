@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -153,34 +154,33 @@
                     <h2 class="section-subheading text-uppercase">Or call us:<a class="nav-link" href="tel:330-419-6860">(330)419-6860</a></h2>
                 </div>
                 <form id="contactForm" action="/freequote" method="POST">
-                    <div class="row align-items-stretch mb-5">
+                    <div class="row align-items-stretch mb-3">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input class="form-control" name="name" type="text" placeholder="Your Name *" required />
+                                <input class="form-control" name="name" type="text" placeholder="Your Name *" required minlength="2" />
                             </div>
                             <div class="form-group">
-                                <input class="form-control" name="email" type="email" placeholder="Your Email *" data-sb-validations="email" required />
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <input class="form-control" name="email" type="email" placeholder="Your Email *" required pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="format: test@test.com"/>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" name="phone" type="tel" placeholder="Your Phone *" required />
+                                <input class="form-control" name="phone" type="tel" placeholder="Your Phone *" required title="Format: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
                             </div>
                             <div class="form-check mb-md-0">
                                 <div class="d-inline-block w-50">
-                                    <strong>Check all that apply:</strong>
-                                    <div><input class="form-check-input" type="checkbox" value="soft wash roof" name="checkAllApply" id="check-soft-wash-roof">
+                                    <strong>Check all that apply: *</strong>
+                                    <div><input class="services form-check-input" type="checkbox" value="soft wash roof" name="checkAllApply" id="check-soft-wash-roof" required onclick="deRequireCheckbox('services')">
                                     <label class="form-check-label" for="check-soft-wash-roof">Soft wash roof</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="soft wash house" name="checkAllApply" id="check-soft-wash-house">
+                                    <div><input class="services form-check-input" type="checkbox" value="soft wash house" name="checkAllApply" id="check-soft-wash-house" required onclick="deRequireCheckbox('services')">
                                     <label class="form-check-label" for="check-soft-wash-house">Soft wash house</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="driveway wash" name="checkAllApply" id="check-driveway-wash">
+                                    <div><input class="services form-check-input" type="checkbox" value="driveway wash" name="checkAllApply" id="check-driveway-wash" required onclick="deRequireCheckbox('services')">
                                     <label class="form-check-label" for="check-driveway-wash">Driveway wash</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="driveway seal" name="checkAllApply" id="check-driveway-seal">
+                                    <div><input class="services form-check-input" type="checkbox" value="driveway seal" name="checkAllApply" id="check-driveway-seal" required onclick="deRequireCheckbox('services')">
                                     <label class="form-check-label" for="check-driveway-seal">Driveway seal</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="gutter cleaning" name="checkAllApply" id="check-gutter">
+                                    <div><input class="services form-check-input" type="checkbox" value="gutter cleaning" name="checkAllApply" id="check-gutter" required onclick="deRequireCheckbox('services')">
                                     <label class="form-check-label" for="check-gutter">Gutter cleaning</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="deck wash" name="checkAllApply" id="check-deck-wash">
+                                    <div><input class="services form-check-input" type="checkbox" value="deck wash" name="checkAllApply" id="check-deck-wash" required onclick="deRequireCheckbox('services')">
                                     <label class="form-check-label" for="check-deck-wash">Deck wash</label></div>
-                                    <div><input class="form-check-input" type="checkbox" value="commercial power washing" name="checkAllApply" id="check-commercial">
+                                    <div><input class="services form-check-input" type="checkbox" value="commercial power washing" name="checkAllApply" id="check-commercial" required onclick="deRequireCheckbox('services')">
                                     <label class="form-check-label" for="check-commercial">Commercial power washing</label></div>
                                 </div>
                                 <div class="d-inline-block mt-3 mb-3">
@@ -212,10 +212,10 @@
                                 <input class="form-control" type="text" name="city" placeholder="City"></input>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="text" name="state" placeholder="State"></input>
+                                <input class="form-control" type="text" name="state" placeholder="State" minlength="2" maxlength="2"></input>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="text" name="zip" placeholder="Zip"></input>
+                                <input class="form-control" type="text" name="zip" placeholder="Zip *" required minlength="5" pattern="(^\d{5}$)|(^\d{5}-\d{4}$)" title="format: 12345 or 12345-1234" required></input>
                             </div>
                             <div class="form-group">
                                 <input class="form-control" type="number" name="footage" placeholder="Square footage of house"></input>
@@ -225,9 +225,33 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Request Quote</button></div>
+                    <div class="text-center row">
+                        <div class="col-md-12">
+                            <div class="g-recaptcha"
+                                 data-sitekey="6LcUZNgqAAAAAHC2YIIWRiVNdsZnN-7uebs_ysZy"
+                                 data-callback="onCaptchaValidated"
+                                 data-size="invisible">
+                            </div>
+                            <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Request Quote</button>
+                        </div>
+                    </div>
                 </form>
+                <script>
+                    var isCaptchaValidated = false;
+                    var form = document.getElementById("contactForm");
+
+                    function onCaptchaValidated() {
+                        isCaptchaValidated = true;
+                        form.submit();
+                    }
+
+                    form.addEventListener("submit", function (event) {
+                        if (!isCaptchaValidated) {
+                            event.preventDefault();
+                            grecaptcha.execute();
+                        }
+                    });
+                </script>
             </div>
         </section>
         <!-- Footer-->
