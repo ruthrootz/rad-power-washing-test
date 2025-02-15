@@ -57,7 +57,7 @@ State: ${state}
 Zip: ${zip}
 Square footage of house: ${footage}
 Service/s requested: ${checkAllApply ? checkAllApply.toString().replace(",", ", ") : "[none selected]"}
-How they heard about RAD: ${hearAbout}
+How they heard about RAD: ${hearAbout ? hearAbout : "[none selected]"}
 Comments, questions: ${commentsQuestions}`,
   };
   console.log(emailData);
