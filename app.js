@@ -54,7 +54,7 @@ app.post("/freequote", async (req, res) => {
   .then(res => res.json())
   .then(data => data.success);
 
-  if (!success || !name || !phone || !email || !zip || !checkAllApply) {
+  if (!name || !phone || !email || !zip || !checkAllApply) {
     console.log('likely a bot');
     res.status(429).end();
   }
