@@ -43,18 +43,20 @@ app.post("/freequote", async (req, res) => {
   if (hearAbout === "other")
     hearAbout = !!otherReason ? otherReason : "other";
 
-  const params = new URLSearchParams({
-    secret: process.env.RECAPTCHA_SECRET,
-    response: req.body["g-recaptcha-response"],
-  });
-  const response = await fetch('https://www.google.com/recaptcha/api/siteverify', {
-    method: 'POST',
-    body: params,
-  });
-  const body = await response.json();
-  const success = body.success;
-  console.log(body);
-  if (!success || !name || !phone || !email || !zip || !checkAllApply) {
+  //const params = new URLSearchParams({
+    //secret: process.env.RECAPTCHA_SECRET,
+    //response: req.body["g-recaptcha-response"],
+  //});
+  //const response = await fetch('https://www.google.com/recaptcha/api/siteverify', {
+    //method: 'POST',
+    //body: params,
+  //});
+  //const body = await response.json();
+  // TODO: use success in validation check
+  //const success = body.success;
+  //console.log(body);
+
+  if (!name || !phone || !email || !zip || !checkAllApply) {
     console.log('likely a bot');
     res.status(429).end();
     return;
