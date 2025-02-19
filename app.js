@@ -43,6 +43,22 @@ app.post("/freequote", async (req, res) => {
   if (hearAbout === "other")
     hearAbout = !!otherReason ? otherReason : "other";
 
+  const params = new URLSearchParams({
+    secret: process.env.RECAPTCHA_SECRET,
+    response: req.body["g-recaptcha-response"],
+  });
+  const success = await fetch('https://www.google.com/recaptcha/api/siteverify', {
+    method: 'POST',
+    body: params,
+  })
+  .then(res => res.json())
+  .then(data => data.success);
+
+  if (!success || !name || !phone || !email || !zip || !checkAllApply) {
+    console.log('likely a bot');
+    res.status(429).end();
+  }
+
   const emailData = {
     from: process.env.FROM_EMAIL,
     to: process.env.TO_EMAIL,
