@@ -6,8 +6,8 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 const config = {
-  service: "gmail",
-  host: "smtp.gmail.com",
+  service: 'gmail',
+  host: 'smtp.gmail.com',
   port: 587,
   secure: false,
   auth: {
@@ -31,21 +31,21 @@ app.use(express.static('public'));
 app.use(express.static(__dirname + '/views'));
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.get("/", (req, res) => res.render('index'));
+app.get('/', (req, res) => res.render('index'));
 
-app.post("/freequote", async (req, res) => {
+app.post('/freequote', async (req, res) => {
   let { name, phone, email,
     address1, address2,
     city, state, zip,
     footage, hearAbout, checkAllApply,
     commentsQuestions, otherReason } = req.body;
 
-  if (hearAbout === "other")
-    hearAbout = !!otherReason ? otherReason : "other";
+  if (hearAbout === 'other')
+    hearAbout = !!otherReason ? otherReason : 'other';
 
   //const params = new URLSearchParams({
     //secret: process.env.RECAPTCHA_SECRET,
-    //response: req.body["g-recaptcha-response"],
+    //response: req.body['g-recaptcha-response'],
   //});
   //const response = await fetch('https://www.google.com/recaptcha/api/siteverify', {
     //method: 'POST',
@@ -75,18 +75,17 @@ City: ${city}
 State: ${state}
 Zip: ${zip}
 Square footage of house: ${footage}
-Service/s requested: ${checkAllApply ? checkAllApply.toString().replace(",", ", ") : "[none selected]"}
-How they heard about RAD: ${hearAbout ? hearAbout : "[none selected]"}
+Service/s requested: ${checkAllApply ? checkAllApply.toString().replace(',', ', ') : '[none selected]'}
+How they heard about RAD: ${hearAbout ? hearAbout : '[none selected]'}
 Comments, questions: ${commentsQuestions}`,
   };
   console.log(emailData);
 
   await send(emailData);
-  res.redirect("/thankyou.html");
+  res.redirect('/thankyou.html');
 });
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 server.keepAliveTimeout = 120 * 1000;
 server.headersTimeout = 120 * 1000;
-
