@@ -52,7 +52,6 @@ app.post('/freequote', async (req, res) => {
     body: params,
   });
   const body = await response.json();
-  // TODO: use success in validation check
   const success = body.success;
   console.log(body);
 
