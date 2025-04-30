@@ -11234,6 +11234,28 @@ header.masthead .masthead-heading {
   height: 2.75rem;
 }
 
+.projects-heading {
+  font-size: 2.5rem;
+  margin-top: 5px;
+}
+@media (max-width: 1000px) {
+  .projects-heading {
+    font-size: 2.5rem;
+    margin-top: 5vh;
+  }
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.project-image img {
+  border-radius: 1%;
+}
+
 section#services .section-heading {
   color: #172E73;
 }
