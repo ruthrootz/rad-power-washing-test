@@ -11241,7 +11241,7 @@ header.masthead .masthead-heading {
 @media (max-width: 1000px) {
   .projects-heading {
     font-size: 2.5rem;
-    margin-top: 5vh;
+    margin-top: 7vh;
   }
 }
 
@@ -11252,7 +11252,7 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 
-.project-image img {
+.project {
   --b: 5px; /* thickness of the border */
   --c: var(--bs-primary); /* color of the border */
   --w: 50px; /* width of border */
