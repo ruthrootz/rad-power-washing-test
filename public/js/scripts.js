@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     const otherReasonInput = document.body.querySelector("#other-reason-input");
-    otherReasonInput.addEventListener("click", () => {
+    otherReasonInput?.addEventListener("click", () => {
         document.getElementById("other-reason-radio").checked = true;
     });
 
