@@ -11038,9 +11038,11 @@ header.masthead .masthead-heading {
   display: block;
   margin: 0 auto;
 }
+
 #services .portfolio-item .portfolio-link img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
+
 #services .portfolio-item .portfolio-link .portfolio-hover {
   display: flex;
   position: absolute;
@@ -11248,10 +11250,6 @@ header.masthead .masthead-heading {
   }
 }
 
-.project-image {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-}
-
 .project-title {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11260,21 +11258,26 @@ header.masthead .masthead-heading {
 }
 
 .project {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border: 25px solid #0000; /* space for the border */
   --b: 5px; /* thickness of the border */
   --c: var(--bs-primary); /* color of the border */
   --w: 50px; /* width of border */
-  border: 10px solid #0000; /* space for the border */
   --_g: #0000 90deg,var(--c) 0;
   --_p: var(--w) var(--w) border-box no-repeat;
-  background:
-    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
-    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
-    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
-    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+  /*background:*/
+    /*conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),*/
+    /*conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),*/
+    /*conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),*/
+    /*conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);*/
+}
+.project:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 @media (max-width: 1000px) {
   .project {
     --b: 0px; /* thickness of the border */
+    border: 10px solid #0000; /* space for the border */
   }
 }
 
