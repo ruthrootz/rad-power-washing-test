@@ -11082,13 +11082,13 @@ header.masthead .masthead-heading {
   max-width: 100vw;
 }
 .portfolio-modal .modal-content {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 .portfolio-modal .modal-content p.item-intro {
   font-style: italic;
@@ -11251,6 +11251,8 @@ header.masthead .masthead-heading {
 }
 
 .project-title {
+  padding: 10px;
+  text-align: center;
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
@@ -11258,8 +11260,9 @@ header.masthead .masthead-heading {
 }
 
 .project {
+  height: 100%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  border: 25px solid #0000; /* space for the border */
+  border: 0px solid #0000; /* space for the border */
   --b: 5px; /* thickness of the border */
   --c: var(--bs-primary); /* color of the border */
   --w: 50px; /* width of border */
@@ -11277,8 +11280,64 @@ header.masthead .masthead-heading {
 @media (max-width: 1000px) {
   .project {
     --b: 0px; /* thickness of the border */
-    border: 10px solid #0000; /* space for the border */
+    border: 0px solid #0000; /* space for the border */
   }
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.project-text {
+}
+.project-heading {
+  margin-top: 5px;
+}
+@media (max-width: 1000px) {
+  .project-heading {
+    margin-top: 7vh;
+  }
+}
+
+.carousel-thumbnails {
+  --aspect-ratio: 4/3;
+}
+@media (min-width: 1000px) {
+  .carousel-thumbnails {
+    max-height: 65vh;
+  }
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+}
+
+.scroller {
+  display: flex;
+  gap: var(--wa-space-s);
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-padding: var(--wa-space-s);
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  opacity: 0.3;
+  will-change: opacity;
+  transition: 250ms opacity;
+  cursor: pointer;
+}
+
+.image.active {
+  opacity: 1;
 }
 
 section#services .section-heading {

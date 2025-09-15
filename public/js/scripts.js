@@ -47,6 +47,29 @@ window.addEventListener('DOMContentLoaded', event => {
         document.getElementById("other-reason-radio").checked = true;
     });
 
+
+    const carousel = document.querySelector('.carousel-thumbnails');
+    const scroller = document.querySelector('.scroller');
+    const thumbnails = document.querySelectorAll('.image');
+    scroller?.addEventListener('click', e => {
+        const target = e.target;
+        if (target.matches('.image')) {
+            const index = [...thumbnails].indexOf(target);
+            carousel.goToSlide(index);
+        }
+    });
+    carousel?.addEventListener('wa-slide-change', e => {
+        const slideIndex = e.detail.index;
+        [...thumbnails].forEach((thumb, i) => {
+            thumb.classList.toggle('active', i === slideIndex);
+            if (i === slideIndex) {
+                thumb.scrollIntoView({
+                    block: 'nearest',
+                });
+            }
+        });
+    });
+
 });
 
 function deRequireCheckbox(elClass) {
@@ -67,3 +90,4 @@ function deRequireCheckbox(elClass) {
         }
     }
 }
+

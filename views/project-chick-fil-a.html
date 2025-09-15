@@ -15,6 +15,8 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://early.webawesome.com/webawesome@3.0.0-beta.5/dist/styles/webawesome.css" />
+        <script type="module" src="https://early.webawesome.com/webawesome@3.0.0-beta.5/dist/webawesome.loader.js"></script>
     </head>
     <body>
         <!-- Navigation-->
@@ -37,52 +39,42 @@
                 </div>
             </div>
         </nav>
-        <section class="page-section" id="projects">
+        <section class="page-section">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="projects-heading text-uppercase">Projects</h2>
+                    <h2 class="project-heading text-uppercase">Chick-fil-a in N. Canton</h2>
+                    <div class="project-text m-3">
+                        project text description here
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="project">
-                            <a class="project-link" href="/project-chick-fil-a.html">
-                                <img class="img-fluid" src="assets/img/projects/1-1.jpg" alt="..." />
-                                <div class="project-text">
-                                    <div class="project-title">Chick-fil-a in N. Canton</div>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <wa-carousel class="carousel-thumbnails" navigation loop>
+                            <wa-carousel-item>
+                                <img
+                                    src="assets/img/projects/5-1.jpg"
+                                />
+                            </wa-carousel-item>
+                            <wa-carousel-item>
+                                <img
+                                  src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=10"
+                                />
+                            </wa-carousel-item>
+                            <wa-carousel-item>
+                              <img
+                                  src="https://images.unsplash.com/photo-1499002238440-d264edd596ec?q=10"
+                              />
+                            </wa-carousel-item>
+                        </wa-carousel>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="project">
-                            <a class="project-link" href="/project-bell.html">
-                                <img class="img-fluid" src="assets/img/projects/2-1.jpg" alt="..." />
-                                <div class="project-title">Concrete/Stone Washing and Sealing</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="project">
-                            <a class="project-link" href="/project-hospital.html">
-                                <img class="img-fluid" src="assets/img/projects/3-1.jpg" alt="..." />
-                                <div class="project-title">Concrete/Stone Washing and Sealing</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="project">
-                            <a class="project-link" href="/project-ohio-city.html">
-                                <img class="img-fluid" src="assets/img/projects/4-1.jpg" alt="..." />
-                                <div class="project-title">Concrete/Stone Washing and Sealing</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="project">
-                            <a class="project-link" href="/project-warehouse.html">
-                                <img class="img-fluid" src="assets/img/projects/5-1.jpg" alt="..." />
-                                <div class="project-title">Concrete/Stone Washing and Sealing</div>
-                            </a>
+                    <div class="thumbnails">
+                        <div class="scroller">
+                            <img
+                                class="image active"
+                                src="assets/img/projects/5-1.jpg"
+                            />
+                            <img class="image" src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=10" />
+                            <img class="image" src="https://images.unsplash.com/photo-1499002238440-d264edd596ec?q=10" />
                         </div>
                     </div>
                 </div>
@@ -94,4 +86,3 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
-

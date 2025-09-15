@@ -34,6 +34,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.get('/', (req, res) => res.render('index'));
 
 app.post('/freequote', async (req, res) => {
+  console.log(req.body);
   let { name, phone, email,
     address1, address2,
     city, state, zip,
@@ -88,3 +89,4 @@ const server = app.listen(port, () => console.log(`Example app listening on port
 
 server.keepAliveTimeout = 120 * 1000;
 server.headersTimeout = 120 * 1000;
+
